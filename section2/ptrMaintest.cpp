@@ -28,6 +28,15 @@ int main(int argc, const char **argv)
               << "ptr2 = " << ptr2 << "\t"
               << "&ptr2 = " << &ptr2 << std::endl;
 
+    int **pptr = &ptr;
+
+    std::cout << "ivalue= " << ivalue << "\t"
+              << "ptr = " << ptr << "\t"
+              << "*ptr = " << *ptr << "\t"
+              << "pptr = " << pptr << "\t"
+              << "*pptr = " << *pptr << "\t"
+              << "**pptr = " << **pptr << std::endl;
+
     int *p1 = nullptr;
 
     int *p2 = 0;
