@@ -129,36 +129,38 @@ int main(int argc, const char **argv)
     int i = 0;
 
     const int ci1 = i, &cr = ci1;
-    auto b = ci1;   //b是一个整数(ci1的顶层特性被忽略了)
-    b = 2; //b可以被修改
-    auto c = cr;    //c是一个整数(cr是ci1的别名，ci本身是一个顶层const)
+    auto b = ci1; //b是一个整数(ci1的顶层特性被忽略了)
+    b = 2;        //b可以被修改
+    auto c = cr;  //c是一个整数(cr是ci1的别名，ci本身是一个顶层const)
 
-
-    c = 3;//c可以被修改
-    auto d = &i;    //d是一个整型指针(整数的地址就是指向整数的指针)
+    c = 3;       //c可以被修改
+    auto d = &i; //d是一个整型指针(整数的地址就是指向整数的指针)
     auto e = &ci1;
-    std::cout << "b = " << b <<"\t"
-              << "c = " << c <<"\t"
-              << "d = " << d <<"\t"
-              << "e = " << e <<std::endl;
+    std::cout << "b = " << b << "\t"
+              << "c = " << c << "\t"
+              << "d = " << d << "\t"
+              << "e = " << e << std::endl;
     //如果需要auto推断出顶层const，需要明确指出
 
-    const auto f  = ci;
+    const auto f = ci;
     //f = 6; 会提示：“表达式必须是可修改的左值”
 
     auto &g = ci;
     // auto &h = 42; 会报错，不能为非常量引用绑定字面值
     const auto &j = 42; //可以为常量引用绑定字面值
     //使用auto在一条语句中定义多个变量时，“&” 和“*”只从属于某一个声明符，而非基本数据类型的一部分，因此初始值必须是同一种类型
-    auto k = ci1, &l = i;//k是整数，l是整型引用
-    auto &m = ci1, *pa = &ci1; //m是对整型常量的引用，p是指向整型常量的指针 
+    auto k = ci1, &l = i;      //k是整数，l是整型引用
+    auto &m = ci1, *pa = &ci1; //m是对整型常量的引用，p是指向整型常量的指针
     //auto &n = i, *pa2 = &ci1; 错误：i的类型是int而&ci1的类型是const int，初始值不是同一种类型
 
     //***************************** decltype ***********************************
 
+    decltype(ci1) x = 0;
+
     return 0;
 }
 
-namespace auto_type_description {
+namespace auto_type_description
+{
 
 }
