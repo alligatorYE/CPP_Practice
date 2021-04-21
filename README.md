@@ -137,10 +137,30 @@
 ### auto类型说明符
 
 - **auto**类型说明符：让编译器**自动推断类型**。
+
 - `int i = 0, &r = i; auto a = r;` 推断`a`的类型是`int`。
+
 - 会忽略`顶层const`。
+
 - `const int ci = 1; const auto f = ci;`推断类型是`int`，需要自己加`const`
+
 - `C++11`
+
+  两条基本规则：
+
+  **1.auto总是推导出“值类型”，绝对不会是“引用”；**
+
+  **2.auto可以附加上const、volatile、*、&这样的类型修饰符，得到新的类型**
+
+  ```c++
+  auto x = 10L;		// auto推导为long， x是long
+  auto& x1 = x ;		// auto推导为long，x1是long&
+  auto* x2 = &x ;		// auto推导为long, x2是long*
+  const auto& x3 =x;	// auto推导为long，x3是const long&
+  auto x4=&x3;		// auto推导为const long*，x4是const long*
+  ```
+
+  auto的"自动推导"能力只能用于**"初始化"**的场合，具体来说就是赋值初始化或者花括号初始化(初始化列表、Initializer list), 变量右边必须要有一个表达式（简单、复杂的都可以），这样才能在左边放上auto，编译器才能找到表达式，自动计算类型。
 
 ### decltype类型指示符
 

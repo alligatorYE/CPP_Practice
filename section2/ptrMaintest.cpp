@@ -155,8 +155,13 @@ int main(int argc, const char **argv)
 
     //***************************** decltype ***********************************
 
-    decltype(ci1) x = 0;
+    const int ci2 = 0, &cj = ci2;
+    decltype(ci2) x = 0;
+    decltype(cj) y = x;
+    // decltype(cj) z;  z是一个引用，必须被初始化
 
+
+    
     return 0;
 }
 
