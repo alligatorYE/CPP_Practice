@@ -35,5 +35,7 @@ int main(int argc, char const *argv[])
         cout << var << "\t";
     }
 
+    char sayHello[] = {'H', 'e', 'l', 'l', 'o', ' ', 'W', 'o', 'r', 'l', 'd', '\0'};
+    cout << sayHello << endl;
     return 0;
 }
