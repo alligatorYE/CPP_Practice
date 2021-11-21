@@ -2,8 +2,8 @@
 // Created by alligator on 2021/11/21.
 //
 /*
- * 使用auto 自动推断类型
- * 程序清单3.6 使用关键字auto 依靠编译器的类型推断功能
+ * 使用const 将变量声明为常量
+ * 程序清单3.7 声明一个名为pi 的常量
  * */
 
 #include <iostream>
@@ -14,12 +14,10 @@ using std::endl;
 
 int main(int argc, char const *argv[])
 {
-    auto coinFlippedHeads = true;
-    auto longNumber = 2500000000000;
-    cout << "coinFlippedHeads = " << coinFlippedHeads << endl;
-    cout << "size of coinFlippedHeads: " << sizeof(coinFlippedHeads) << endl;
+    const double pi = 22.0 / 7;
+    cout << "The value of pi is " << pi <<endl;
 
-    cout << "longNumber = " << longNumber << endl;
-    cout << "size of longNumber: " << sizeof(longNumber) << endl;
+    // Uncomment next line to view compile failure
+//    pi = 345; //试图向常量赋值，编译器将会报错
     return 0;
 }
