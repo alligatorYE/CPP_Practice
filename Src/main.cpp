@@ -15,7 +15,10 @@ int main(int argc, char const *argv[])
 {
 
     int largeNum = 5000000;
+//    short smallNum = largeNum; // compiles OK, yet narrowing error
+//    short anotherNum{ largeNum }; // error! Amend types
     int anotherNum{ largeNum }; // OK!
+//    float someFloat{ largeNum }; // error! An int may be narrowed
     float someFloat{ 5000000 }; // OK! 5000000 can be accomodated
     return 0;
 }
