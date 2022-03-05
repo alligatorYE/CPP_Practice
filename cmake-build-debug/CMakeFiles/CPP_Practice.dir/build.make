@@ -68,15 +68,15 @@ include CMakeFiles/CPP_Practice.dir/flags.make
 CMakeFiles/CPP_Practice.dir/Src/main.cpp.obj: CMakeFiles/CPP_Practice.dir/flags.make
 CMakeFiles/CPP_Practice.dir/Src/main.cpp.obj: ../Src/main.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Alligator\Workspace\CLionProjects\CPP_Practice\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/CPP_Practice.dir/Src/main.cpp.obj"
-	D:\PROGRA~1\MINGW-~1\MINGW_~1\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\CPP_Practice.dir\Src\main.cpp.obj -c D:\Alligator\Workspace\CLionProjects\CPP_Practice\Src\main.cpp
+	D:\PROGRA~1\MINGW-~1\MINGW_~1\mingw64\bin\X86_64~2.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\CPP_Practice.dir\Src\main.cpp.obj -c D:\Alligator\Workspace\CLionProjects\CPP_Practice\Src\main.cpp
 
 CMakeFiles/CPP_Practice.dir/Src/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/CPP_Practice.dir/Src/main.cpp.i"
-	D:\PROGRA~1\MINGW-~1\MINGW_~1\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Alligator\Workspace\CLionProjects\CPP_Practice\Src\main.cpp > CMakeFiles\CPP_Practice.dir\Src\main.cpp.i
+	D:\PROGRA~1\MINGW-~1\MINGW_~1\mingw64\bin\X86_64~2.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Alligator\Workspace\CLionProjects\CPP_Practice\Src\main.cpp > CMakeFiles\CPP_Practice.dir\Src\main.cpp.i
 
 CMakeFiles/CPP_Practice.dir/Src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/CPP_Practice.dir/Src/main.cpp.s"
-	D:\PROGRA~1\MINGW-~1\MINGW_~1\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Alligator\Workspace\CLionProjects\CPP_Practice\Src\main.cpp -o CMakeFiles\CPP_Practice.dir\Src\main.cpp.s
+	D:\PROGRA~1\MINGW-~1\MINGW_~1\mingw64\bin\X86_64~2.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Alligator\Workspace\CLionProjects\CPP_Practice\Src\main.cpp -o CMakeFiles\CPP_Practice.dir\Src\main.cpp.s
 
 # Object files for target CPP_Practice
 CPP_Practice_OBJECTS = \
