@@ -10,6 +10,7 @@
  * git remote add gitee https://gitee.com/alligatorYE/CPP_Practice.git
  * git remote -v # 查看远程分支
  * git remote rm gitee # 移除远程分支gitee
+ * 解决[ OpenSSL SSL_read: Connection was reset, errno 10054] 办法：git config --global http.sslVerify "false"
  * */
 
 #include <iostream>
