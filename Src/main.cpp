@@ -7,6 +7,7 @@
  * clip < ~/.ssh/github_id_rsa.pub
  * 为git仓库配置远程仓库
  * git remote add gitee https://gitee.com/alligatorYE/CPP_Practice.git
+ * vim esc键无法退出编辑模式，使用F5键退出编辑模式
  * */
 
 #include <iostream>
