@@ -13,9 +13,26 @@
 #include <string>
 using std::string;
 using std::cout;
+using std::cin;
 using std::endl;
+
+inline double GetPi()
+{
+    return 3.14159;
+}
+
+inline long DoubleNum(int inputNumber)
+{
+    return inputNumber * 2;
+}
 
 int main(int argc, char const *argv[])
 {
+    cout << "Enter an integer: ";
+    int inputNum = 0;
+    cin >> inputNum;
+
+    // Call inline function
+    cout << "Double is: " << DoubleNum(inputNum) << endl;
     return 0;
 }
