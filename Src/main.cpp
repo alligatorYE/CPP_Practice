@@ -17,9 +17,23 @@
 #include <string>
 using std::string;
 using std::cout;
+using std::cin;
 using std::endl;
+
+const double Pi = 3.14159265;
+
+auto Area(double radius)
+{
+    return Pi * radius * radius;
+}
+
 
 int main(int argc, char const *argv[])
 {
+    cout << "Enter radius: ";
+    double radius = 0;
+    cin >> radius;
+    cout << "Area is: " << Area(radius) << endl;
     return 0;
 }
+
