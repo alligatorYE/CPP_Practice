@@ -18,9 +18,21 @@
 #include <string>
 using std::string;
 using std::cout;
+using std::cin;
 using std::endl;
+using std::hex;
 
 int main(int argc, char const *argv[])
 {
+    //Request for memory space for an int
+    int * pointToAnAge = new int;
+
+    // Use the allocated memory to store a number
+    cout << "Enter your dog's age: ";
+    cin >> *pointToAnAge;
+
+    // use indirection operator* to access value
+    cout << "Age: " << *pointToAnAge << " is stored at 0x" << hex << pointToAnAge << endl;
+    delete pointToAnAge; //release memory
     return 0;
 }

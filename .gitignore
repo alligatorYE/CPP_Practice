@@ -2,3 +2,5 @@
 *.out
 *.o
 *.a
+.vscode
+cmake-build-debug
