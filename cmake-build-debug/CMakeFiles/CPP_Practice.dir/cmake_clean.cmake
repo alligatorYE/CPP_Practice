@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/CPP_Practice.dir/Src/main.cpp.obj"
+  "CMakeFiles/CPP_Practice.dir/Src/main.cpp.obj.d"
   "CPP_Practice.exe"
   "CPP_Practice.exe.manifest"
   "CPP_Practice.pdb"
