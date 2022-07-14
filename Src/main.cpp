@@ -8,7 +8,8 @@
  * git remote add gitee https://gitee.com/alligatorYE/CPP_Practice.git
  * git remote -v # 查看远程分支
  * git remote rm gitee # 移除远程分支gitee
- * 解决[ OpenSSL SSL_read: Connection was reset, errno 10054] 办法：git config --global http.sslVerify "false"
+ * 解决[ OpenSSL SSL_read: Connection was reset, errno 10054] 办法：git config --global http.sslVerify "false" 或者尝试：git init 再提交
+
  * vim esc键无法退出编辑模式，使用F5键退出编辑模式
  * git log --oneline --graph --all --decorate
  * 将notes 添加到dev分支中: git checkout -p 21_8.7 notes/*.*
