@@ -1,3 +1,0 @@
-D:/Alligator/WorkSpace/CLionProjects/CPP/CPP_Practice/cmake-build-debug/CMakeFiles/CPP_Practice.dir
-D:/Alligator/WorkSpace/CLionProjects/CPP/CPP_Practice/cmake-build-debug/CMakeFiles/edit_cache.dir
-D:/Alligator/WorkSpace/CLionProjects/CPP/CPP_Practice/cmake-build-debug/CMakeFiles/rebuild_cache.dir

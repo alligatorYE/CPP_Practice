@@ -15,22 +15,37 @@
  * git push --delete origin 21_9.12
  * git branch -m 21_9.12 21_9.12_explicit
  * git push origin 21_9.12_explicit
+ * ------------------------------------------------
+ * $ git branch -m OLD-BRANCH-NAME NEW-BRANCH-NAME
+ * $ git fetch origin
+ * $ git branch -u origin/NEW-BRANCH-NAME NEW-BRANCH-NAME
+ * $ git remote set-head origin -a
+ * $ git remote prune origin
+ * ------------------------------------------------
+ *
  * */
 
 #include <iostream>
 #include <string>
+#include "Human.h"
+
 using std::string;
 using std::cout;
 using std::endl;
 
+void DoSomething(Human person)
+{
+    cout << "Human sent did something." << endl;
+    return;
+}
+
 int main(int argc, char const *argv[])
 {
-    auto coinFlippedHeads = true;
-    auto longNumber = 2500000000000;
-    cout << "coinFlippedHeads = " << coinFlippedHeads << endl;
-    cout << "size of coinFlippedHeads: " << sizeof(coinFlippedHeads) << endl;
+    Human kid(10); // explicit conversion is OK.
+    Human anotherKid = Human(11); // explicit, OK.
+    DoSomething(kid); // OK.
 
-    cout << "longNumber = " << longNumber << endl;
-    cout << "size of longNumber: " << sizeof(longNumber) << endl;
+//    Human anotherKid2 = 11; // failure: implicit conversion not OK.
+//    DoSomething(10); // implicit conversion
     return 0;
 }
