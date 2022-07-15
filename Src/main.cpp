@@ -12,6 +12,9 @@
  * vim esc键无法退出编辑模式，使用F5键退出编辑模式
  * git log --oneline --graph --all --decorate
  * 将notes 添加到dev分支中: git checkout -p 21_8.7 notes/*.*
+ * git push --delete origin 21_9.12
+ * git branch -m 21_9.12 21_9.12_explicit
+ * git push origin 21_9.12_explicit
  * */
 
 #include <iostream>
