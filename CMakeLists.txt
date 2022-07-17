@@ -4,4 +4,4 @@ project(CPP_Practice)
 set(CMAKE_CXX_STANDARD 14)
 
 add_executable(CPP_Practice
-        Src/main.cpp)
+        Src/main.cpp Src/MyString.cpp)

@@ -3,3 +3,13 @@
 //
 
 #include "Human.h"
+
+void Human::Talk(string Statement)
+{
+    cout << Statement << endl;
+}
+
+void Human::IntroduceSelf()
+{
+    Talk("Bla bla");
+}

@@ -33,19 +33,20 @@ using std::string;
 using std::cout;
 using std::endl;
 
-void DoSomething(Human person)
-{
-    cout << "Human sent did something." << endl;
-    return;
-}
 
 int main(int argc, char const *argv[])
 {
-    Human kid(10); // explicit conversion is OK.
-    Human anotherKid = Human(11); // explicit, OK.
-    DoSomething(kid); // OK.
+    MyString mansName("Adam");
+    MyString womansName("Eve");
+    cout << "sizeof(MyString) = " << sizeof(MyString) << endl;
+    cout << "sizeof(mansName) = " << sizeof(mansName) << endl;
+    cout << "sizeof(womansName) = " << sizeof(womansName) << endl;
 
-//    Human anotherKid2 = 11; // failure: implicit conversion not OK.
-//    DoSomething(10); // implicit conversion
+    Human firstMan(mansName, 25, true);
+    Human firstWoman(womansName, 18, false);
+
+    cout << "sizeof(Human) = " << sizeof(Human) << endl;
+    cout << "sizeof(firstMan) = " << sizeof(firstMan) << endl;
+    cout << "sizeof(firstWoman) = " << sizeof(firstWoman) << endl;
     return 0;
 }
