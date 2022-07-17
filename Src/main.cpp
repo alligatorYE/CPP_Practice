@@ -45,7 +45,8 @@ int main(int argc, char const *argv[])
     Human anotherKid = Human(11); // explicit, OK.
     DoSomething(kid); // OK.
 
-//    Human anotherKid2 = 11; // failure: implicit conversion not OK.
-//    DoSomething(10); // implicit conversion
+//    Human anotherKid2 = 11; // failure: implicit conversion not OK. 阻止了"11"从int隐式转换成"Human(11)"
+//    DoSomething(10); // implicit conversion,阻止了"10"从int隐式转换成"Human(10)"
+//    总而言之如果不希望使用者采用隐式转换的方式创建对象，就使用explicit关键字限定构造函数！
     return 0;
 }
