@@ -13,3 +13,8 @@ void Human::IntroduceSelf()
 {
     Talk("Bla bla");
 }
+
+void displayAge(const Human& person)
+{
+    cout << person.age << endl;
+}

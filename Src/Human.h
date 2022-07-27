@@ -15,10 +15,14 @@ private:
     int age; //
     bool gender; //
     MyString name;
+    friend void displayAge(const Human&person);
 
 public:
     Human(const MyString& InputName, int InputAge, bool InputGender) : name(InputName), age(InputAge), gender(InputGender) {}
+    Human(const MyString& InputName, int InputAge): name(InputName), age(InputAge){};
     int GetAge() const { return age; }
+    void Talk(string Statement);
+    void IntroduceSelf();
 };
 
 

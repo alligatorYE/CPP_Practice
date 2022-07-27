@@ -36,17 +36,8 @@ using std::endl;
 
 int main(int argc, char const *argv[])
 {
-    MyString mansName("Adam");
-    MyString womansName("Eve");
-    cout << "sizeof(MyString) = " << sizeof(MyString) << endl;
-    cout << "sizeof(mansName) = " << sizeof(mansName) << endl;
-    cout << "sizeof(womansName) = " << sizeof(womansName) << endl;
-
-    Human firstMan(mansName, 25, true);
-    Human firstWoman(womansName, 18, false);
-
-    cout << "sizeof(Human) = " << sizeof(Human) << endl;
-    cout << "sizeof(firstMan) = " << sizeof(firstMan) << endl;
-    cout << "sizeof(firstWoman) = " << sizeof(firstWoman) << endl;
+    Human firstMan("Adam", 25);
+    cout << "Accessing private member age via friend function: ";
+    displayAge(firstMan);
     return 0;
 }
