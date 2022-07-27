@@ -28,6 +28,7 @@
 #include <iostream>
 #include <string>
 #include "Human.h"
+#include "Utility.h"
 
 using std::string;
 using std::cout;

@@ -19,14 +19,7 @@ public:
     explicit Human(string humanName, int humanAge) : name(humanName), age(humanAge) {}
 };
 
-class Utility {
 
-public:
-    static void DisplayAge(const Human& person)
-    {
-        cout << person.age << endl;
-    }
-};
 
 
 #endif //CPP_PRACTICE_HUMAN_H
