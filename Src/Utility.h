@@ -4,7 +4,7 @@
 
 #ifndef CPP_PRACTICE_UTILITY_H
 #define CPP_PRACTICE_UTILITY_H
-#include "Human.h"
+#include "Human.h"  //在友元类头文件中包含源类的头文件，不要对源类进行声明
 
 class Utility {
 
@@ -16,3 +16,4 @@ public:
 };
 
 #endif //CPP_PRACTICE_UTILITY_H
+

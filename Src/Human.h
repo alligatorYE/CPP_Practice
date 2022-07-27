@@ -6,6 +6,7 @@
 #define CPP_PRACTICE_HUMAN_H
 #include <string>
 
+//不要在源类头文件中包含友元类的头文件，而是在成员中声明友元类
 
 using namespace std;
 
