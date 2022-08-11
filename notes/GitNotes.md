@@ -22,4 +22,6 @@ $ git remote prune origin
 ```
 ```bash
  git checkout 21_9.14.friend notes/GitNotes.md
+ git merge master --allow-unrelated-histories #解决unrelated histories 冲突
 ```
+
