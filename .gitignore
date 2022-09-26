@@ -3,9 +3,7 @@
 *.o
 *.a
 cmake-build-debug
-<<<<<<< HEAD
 .idea
 .vscode
-=======
-.idea
->>>>>>> master
+
+
