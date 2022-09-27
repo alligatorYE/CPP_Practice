@@ -10,11 +10,13 @@ using namespace std;
 
 class Fish {
 
-public:
+protected:
+
     bool m_isFreshWaterFish;
 
     void setIsFreshWaterFish(bool value) { m_isFreshWaterFish = value; }
 
+public:
     void Swim()
     {
         if(m_isFreshWaterFish)
